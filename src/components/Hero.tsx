@@ -60,22 +60,25 @@ export default function Hero() {
           >
             Professional, stylish, and affordable beauty services in Durban.
           </motion.p>
-          <motion.a
-            href="#"
+          <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
-            className="inline-flex items-center bg-opalya-brown text-white px-8 py-4 rounded-full font-sans text-xs font-bold tracking-widest hover:bg-opacity-90 transition-all group shadow-xl shadow-opalya-brown/10"
           >
-            BOOK NOW
-            <svg className="w-4 h-4 ml-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
-            </svg>
-          </motion.a>
+            <Link
+              to="/contact"
+              className="inline-flex items-center bg-opalya-brown text-white px-8 py-4 rounded-full font-sans text-xs font-bold tracking-widest hover:bg-opacity-90 transition-all group shadow-xl shadow-opalya-brown/10"
+            >
+              BOOK NOW
+              <svg className="w-4 h-4 ml-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
+              </svg>
+            </Link>
+          </motion.div>
         </motion.div>
 
         {/* Image Gallery */}
-        <div className="w-full mt-12 md:mt-20 relative overflow-hidden flex-1 flex items-end">
+        <div className="w-full mt-4 md:mt-20 relative overflow-hidden flex-1 flex items-end">
           <div className="flex animate-[hero-scroll_30s_linear_infinite] px-2 min-w-max">
             {/* Double the images for seamless loop */}
             {[...images, ...images].map((src, idx) => (
