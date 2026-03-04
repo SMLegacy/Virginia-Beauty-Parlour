@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 
 export default function SpecialOffer() {
   return (
@@ -28,13 +29,13 @@ export default function SpecialOffer() {
         <p className="text-[#4A3728]/80 text-base md:text-lg mb-8 font-medium">
           Enjoy 20% off all braiding and nail services.
         </p>
-        <button className="bg-[#FCE0A2] hover:bg-[#F9D485] text-[#4A3728] font-semibold py-3 px-8 rounded-full flex items-center gap-3 transition-all duration-300 transform hover:scale-105 shadow-md">
+        <Link to="/contact" className="bg-[#FCE0A2] hover:bg-[#F9D485] text-[#4A3728] font-semibold py-3 px-8 rounded-full flex items-center gap-3 transition-all duration-300 transform hover:scale-105 shadow-md">
           <span>BOOK NOW</span>
           <svg fill="none" height="18" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="18">
             <circle cx="12" cy="12" r="4" />
             <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
           </svg>
-        </button>
+        </Link>
       </motion.div>
     </section>
   );

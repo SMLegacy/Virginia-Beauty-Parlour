@@ -27,7 +27,7 @@ export default function Hero() {
     <section className="relative min-h-screen bg-opalya-bg text-opalya-brown flex flex-col overflow-hidden">
       {/* Hero Content */}
 
-      <main className="flex-1 flex flex-col items-center pt-12 md:pt-24 text-center z-10">
+      <main className="flex flex-col items-center pt-12 md:flex-1 md:pt-24 text-center z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -78,7 +78,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Image Gallery */}
-        <div className="w-full mt-4 md:mt-20 relative overflow-hidden flex-1 flex items-end">
+        <div className="w-full mt-2 md:mt-20 md:flex-1 relative overflow-hidden flex items-end">
           <div className="flex animate-[hero-scroll_30s_linear_infinite] px-2 min-w-max">
             {/* Double the images for seamless loop */}
             {[...images, ...images].map((src, idx) => (

@@ -55,7 +55,7 @@ export default function Contact() {
           <div className="bg-white/40 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-[#879DB8]/20">
             <h2 className="text-2xl font-bold leading-tight tracking-[-0.015em] pb-8 text-[#113E75]">Schedule Visit</h2>
             <form className="flex flex-col gap-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 gap-6">
                 {/* Full Name */}
                 <label className="flex flex-col gap-2">
                   <span className="text-sm font-semibold text-[#113E75]">Full Name</span>
