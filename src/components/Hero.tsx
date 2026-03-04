@@ -24,7 +24,7 @@ const transforms = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-opalya-bg text-opalya-brown flex flex-col overflow-hidden">
+    <section className="relative md:min-h-screen bg-opalya-bg text-opalya-brown flex flex-col overflow-hidden">
       {/* Hero Content */}
 
       <main className="flex flex-col items-center pt-12 md:flex-1 md:pt-24 text-center z-10">
