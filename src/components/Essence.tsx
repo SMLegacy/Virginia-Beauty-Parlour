@@ -3,7 +3,7 @@ import { CheckCircle, Star, Smile, Activity } from 'lucide-react';
 
 export default function Essence() {
   return (
-    <section className="relative py-16 md:py-20 px-6 md:px-12 lg:px-24 overflow-hidden text-opalya-brown" style={{
+    <section id="about" className="relative py-16 md:py-20 px-6 md:px-12 lg:px-24 overflow-hidden text-opalya-brown" style={{
       background: 'radial-gradient(circle at 20% 50%, #DBEDF5 0%, #879DB8 50%, #5C799A 100%)'
     }}>
       {/* Subtle grid/mesh overlay could go here */}
